@@ -45,3 +45,10 @@ insert into student_details values
 (9,'BIDISHA',834824488,'bidi@gmail.com','jammu and kashmir','BE',1000.3,'1988-02-08',33);
 insert into student_details values
 (10,'TIYASA',834800288,'tiyasa@gmail.com','chennai','BSc',1000.3,'1979-12-09',40);
+select * from student_details where squalification='BE';
+select * from student_details where saddr='chennai' and sfees=1000.3;
+select * from student_details where saddr='chennai' or sfees=1000.3;
+select * from student_details where squalification in('MCA','BE');
+select * from student_details where sname like'%A';
+select * from student_details where sname like'A%';
+select * from student_details where squalification like 'M_A';
